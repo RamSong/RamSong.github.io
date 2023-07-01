@@ -1,7 +1,7 @@
 baseURL: https://ram.wang/
-languageCode: en-us
-defaultContentLanguage: en-us
-title: "Hugo Theme Luna"
+languageCode: zh-CN
+defaultContentLanguage: zh-CN
+title: "RamSong Blog"
 enableRobotsTXT: true
 enableEmoji: true
 theme: hugo-theme-luna
@@ -10,7 +10,7 @@ timeZone: Asia/Shanghai
 
 # 可根据 Git 中的提交生成最近更新记录。
 # use git commit log to generate lastmod record
-enableGitInfo: false
+enableGitInfo: true
 
 # 如果你的博客包含中日韩语，请启用此选项
 # enable CJK language support
@@ -35,7 +35,7 @@ permalinks:
   pages: /:slug.html # about.html
 
 author:
-  name: Ice-Hazymoon
+  name: RamSong
 
 frontmatter:
   lastmod:
@@ -323,7 +323,7 @@ params:
   twitter:
     enabled: true
     rsshub: "https://rsshub.rssforever.com" # rsshub url, see https://github.com/DIYgod/RSSHub
-    id: "GenshinImpact" # Twitter ID
+    id: "cnramsong" # Twitter ID
     # 如果为 true，Hugo 将下载图片和视频并进行优化，如果你在中国大陆地区，请谨慎启用这个选项
     # If enabled, Hugo will download videos and images from the Tweet and optimize them
     imageProcessing: true
