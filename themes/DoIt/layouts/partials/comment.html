@@ -85,6 +85,9 @@
             {{- with $waline.comment -}}
                 {{- $commentConfig = dict "comment" . | dict "waline" | merge $commentConfig -}}
             {{- end -}}
+            {{- with $waline.comment -}}
+                {{- $commentConfig = dict "recaptchaV3Key" . | dict "waline" | merge $commentConfig -}}
+            {{- end -}}
             {{- with $waline.emoji -}}
                 {{- $commentConfig = dict "emoji" . | dict "waline" | merge $commentConfig -}}
             {{- end -}}
