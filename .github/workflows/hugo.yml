@@ -1,43 +1,30 @@
-name: Hugo Build and Deploy
+name: hugo push to github pages
 
 on:
   push:
     branches:
-      - blog
+    - blog
 
 jobs:
-  build-and-deploy:
-    runs-on: ubuntu-latest
+  build-deploy:
+    runs-on: ubuntu-22.04
     steps:
-      # 第一步：检出源码
-      - name: Checkout
-        uses: actions/checkout@v2
-        with:
-          # 如果你的主题是作为子模块存在于主仓库中，需要设置为true
-          submodules: false 
-          # 获取所有历史记录，用于生成最后修改时间等信息
-          fetch-depth: 0 
+    - uses: actions/checkout@v1
+      with:
+        submodules: true
 
-      # 第二步：安装hugo
-      - name: Setup Hugo
-        uses: peaceiris/actions-hugo@v2
-        with:
-          # 指定hugo版本，根据你自己的需要修改
-          hugo-version: 'latest'
-          # 是否使用hugo扩展版，根据你自己的需要修改
-          # extended: true
+    - name: Setup Hugo
+      uses: peaceiris/actions-hugo@v2
+      with:
+        hugo-version: '0.117.0'
+        extended: true
 
-      # 第三步：构建博客静态文件
-      - name: Build
-        run: hugo --minify
+    - name: Build
+      run: HUGO_ENV=production hugo --gc --minify
 
-      # 第四步：部署到master分支
-      - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          # 使用github提供的token进行身份验证
-          github_token: $ { { secrets.PERSONAL_TOKEN }}
-          # 指定推送到的分支名，这里使用master分支
-          PUBLISH_BRANCH: gh-pages
-          # 指定静态文件所在的目录，这里是public目录
-          PUBLISH_DIR: ./public
+    - name: Deploy
+      uses: peaceiris/actions-gh-pages@v2
+      env:
+        ACTIONS_DEPLOY_KEY: ${{ secrets.ACTIONS_DEPLOY_KEY }}
+        PUBLISH_BRANCH: master
+        PUBLISH_DIR: ./public
