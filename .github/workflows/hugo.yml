@@ -36,7 +36,7 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           # 使用github提供的token进行身份验证
-          github_token: $ { { secrets.GH_TOKEN }}
+          github_token: $ { { secrets.PERSONAL_TOKEN }}
           # 指定推送到的分支名，这里使用master分支
           PUBLISH_BRANCH: master
           # 指定静态文件所在的目录，这里是public目录
