@@ -41,3 +41,4 @@ jobs:
           PUBLISH_BRANCH: master
           # 指定静态文件所在的目录，这里是public目录
           PUBLISH_DIR: ./public
+          external_repository: RamSong/ramsong.github.io
