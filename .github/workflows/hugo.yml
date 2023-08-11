@@ -38,6 +38,6 @@ jobs:
           # 使用github提供的token进行身份验证
           github_token: $ { { secrets.PERSONAL_TOKEN }}
           # 指定推送到的分支名，这里使用master分支
-          PUBLISH_BRANCH: master
+          PUBLISH_BRANCH: gh-pages
           # 指定静态文件所在的目录，这里是public目录
           PUBLISH_DIR: ./public
