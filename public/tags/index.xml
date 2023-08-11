@@ -1,0 +1,29 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Tags - 标签 - RamSong Blog</title>
+        <link>https://blog.ram.wang/tags/</link>
+        <description>Tags - 标签 - RamSong Blog</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>song@ram.wang (RamSong)</managingEditor>
+            <webMaster>song@ram.wang (RamSong)</webMaster><lastBuildDate>Mon, 04 Jul 2022 15:21:07 &#43;0000</lastBuildDate><atom:link href="https://blog.ram.wang/tags/" rel="self" type="application/rss+xml" /><item>
+    <title>Freenom</title>
+    <link>https://blog.ram.wang/tags/freenom/</link>
+    <pubDate>Mon, 04 Jul 2022 15:21:07 &#43;0000</pubDate><author>
+        <name>RamSong</name>
+    </author><guid>https://blog.ram.wang/tags/freenom/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>白嫖</title>
+    <link>https://blog.ram.wang/tags/%E7%99%BD%E5%AB%96/</link>
+    <pubDate>Mon, 04 Jul 2022 15:21:07 &#43;0000</pubDate><author>
+        <name>RamSong</name>
+    </author><guid>https://blog.ram.wang/tags/%E7%99%BD%E5%AB%96/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>域名</title>
+    <link>https://blog.ram.wang/tags/%E5%9F%9F%E5%90%8D/</link>
+    <pubDate>Mon, 04 Jul 2022 15:21:07 &#43;0000</pubDate><author>
+        <name>RamSong</name>
+    </author><guid>https://blog.ram.wang/tags/%E5%9F%9F%E5%90%8D/</guid>
+    <description><![CDATA[]]></description>
+</item></channel>
+</rss>

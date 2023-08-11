@@ -1,0 +1,8 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Series - 系列 - RamSong Blog</title>
+        <link>https://blog.ram.wang/series/</link>
+        <description>Series - 系列 - RamSong Blog</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>song@ram.wang (RamSong)</managingEditor>
+            <webMaster>song@ram.wang (RamSong)</webMaster><atom:link href="https://blog.ram.wang/series/" rel="self" type="application/rss+xml" /></channel>
+</rss>
