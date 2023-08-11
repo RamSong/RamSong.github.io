@@ -38,7 +38,7 @@ jobs:
           # 使用github提供的token进行身份验证
           github_token: $ { { secrets.GITHUB_TOKEN }}
           # 指定推送到的仓库名，注意修改为你自己的仓库名
-          publish_repo: ramsong/ramsong.github.io 
+          publish_repo: RamSong/ramsong.github.io 
           # 指定推送到的分支名，这里使用master分支
           publish_branch: master 
           # 指定静态文件所在的目录，这里是public目录
